@@ -1,0 +1,68 @@
+/* CSS Reset */
+
+html, body, div, p{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  }
+  
+
+/* begin layout */
+
+body{background:#333333;}
+
+.wrapper{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	left: 400px;
+	top:200px;
+	-moz-perspective:5px;
+	-webkit-perspective:5px;
+	-moz-perspective-origin:50% 50%;
+	-webkit-perspective-origin:50% 50%;
+	-moz-transform-style:preserve-3d;
+	-webkit-transform-style: preserve-3d;
+}
+
+.box{
+
+	-moz-transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+}
+div#containter{
+	transform:250px;
+	perspective-origin:50% 80%;
+}
+div#child{
+	transform-origin:50% 50% 50%;
+	transform:perspective(0)
+		translate3d(50px, 40px, 80px)
+		scale3d(1,2,0)
+		rotate3d(0,1,0,45deg);
+		transform-style:preserve-3d;
+}
+
+.red{background: red;}
+.blue{background: blue;}
+.orange{background: orange;}
+.green{background: green;}
+.box{
+	width:50px;
+	height: 50px;
+	position: absolute;
+	/*border-top:1px solid #e1e1e1;*/
+	border:1px solid #e1e1e1;
+	background: rgba(50,205,50,.25);
+	/*box-shadow: "0px 0px 24px 6px white";*/
+	
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,93 @@
+/* CSS Reset */
+
+html, body, div, p{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  }
+  
+/* CSS Grid */
+
+/*
+
+for centered layout
+body or wrapper div add class of .main
+.main {  margin:0 auto; width:85%;}
+
+*/
+
+.col20,
+.col25,
+.col33,
+.col50,
+.col100{float:left; display: inline; *margin-left:-0.04em; } /* IE margin hack */
+
+/* dp = div percet */
+
+.col20{width:20%;}
+.col25{width:25%;}
+.col33{width:33.33%;}
+.col50{width:50%;}
+.col100{width:100%;}
+.clear{ clear:both;}
+
+/* begin layout */
+
+body{background:#333333;}
+
+#wrapper, #wrapper2{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	left: 400px;
+	top:200px;
+	-moz-transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+}
+#wrapper2{
+	left: 0px !important;
+	top:0px !important;
+	-moz-transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transform:translateZ(50px);
+}
+.box{
+}
+
+#header{}
+
+#footer{}
+.red{background: red;}
+.blue{background: blue;}
+.orange{background: orange;}
+.green{background: green;}
+.box{
+	width:18px;
+	height: 200px;
+	position: absolute;
+	border-top:1px solid #e1e1e1;
+	border-bottom:1px solid #e1e1e1;
+	background: rgba(50,205,50,.25);
+	/*box-shadow: "0px 0px 24px 6px white";*/
+	
+}
+#frame {width: 33px;
+	-moz-transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;  /* translate must be last */
+	-moz-transform: rotateX(35deg) rotateY(45deg) rotateZ(15deg) translate3d(325px,-70px,50px);
+	-webkit-transform: rotateX(35deg) rotateY(45deg) rotateZ(15deg) translate3d(325px,-70px,50px)}
+	
+.strip {
+	/*-moz-transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	-moz-animation: spin 25s infinite linear;
+	-webkit-animation: spin 25s infinite linear;*/
+}
+
+
+
+
+
+
+
+

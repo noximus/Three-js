@@ -1,0 +1,60 @@
+/* CSS Reset */
+
+html, body, div, p{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  }
+  
+/* CSS Grid */
+
+/*
+
+for centered layout
+body or wrapper div add class of .main
+.main {  margin:0 auto; width:85%;}
+
+*/
+
+.col20,
+.col25,
+.col33,
+.col50,
+.col100{float:left; display: inline; *margin-left:-0.04em; } /* IE margin hack */
+
+/* dp = div percet */
+
+.col20{width:20%;}
+.col25{width:25%;}
+.col33{width:33.33%;}
+.col50{width:50%;}
+.col100{width:100%;}
+.clear{ clear:both;}
+
+/* begin layout */
+
+body{background:#333333;}
+
+#wrapper{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	left: 400px;
+	top:200px;
+}
+
+#header{}
+
+#footer{}
+/*.red{background: red;}
+.blue{background: blue;}
+.orange{background: orange;}
+.green{background: green;}*/
+.box{
+	width:200px;
+	height: 20px;
+	position: absolute;
+	/*box-shadow: "0px 0px 24px 6px white";*/
+	
+}
+

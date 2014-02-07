@@ -1,0 +1,12 @@
+// Including the external PHP within XHTML
+<?php include('path/filename.php') ?>
+
+
+// Setting the variable itself
+$variable="data details";
+
+
+// Creating the output for the data
+<?php
+echo $variable
+?>
